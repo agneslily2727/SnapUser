@@ -1,0 +1,50 @@
+.App {
+  margin: 0;
+  text-align: center;
+  background-color: aliceblue;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.heading {
+  background-color:navy;
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+.content{
+  display: grid;
+  grid-template-columns: 440px 440px 440px;
+}
+.cardItem{
+  margin: 20px;
+  border: 2px solid navy;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  height: 150px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  background-color:aliceblue;
+}
+img{
+  border-radius: 50%;
+}
+.cardItem:hover{
+  background-color: navy;
+  color: white;
+}
+
+@media screen and (max-width:412px) {
+  .content{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .cardItem{
+    font-size: 12px;
+    border: 2px solid navy;
+    border-radius: 10px;
+    text-align: left;
+    padding: 15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background-color:aliceblue;
+  }
+}
